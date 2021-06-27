@@ -1,0 +1,164 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .profile-info { 
+        padding: 0 20px;
+    }
+
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .profile-block {
+        display: flex;
+    } 
+    .profile-block .avaters {
+        width: 50%;
+        margin-right: 40px;
+    }
+    
+    .social h5 {
+        margin-top: 0 !important;
+    }
+    
+    .social {
+        width: 45%;
+    }
+    .profile-info {
+        width: 100%;
+        padding: 0 0px;
+    }
+    .profile-info, .statistic {
+        margin-top: 50px;
+    }
+    table tbody tr td:nth-child(4) {
+        width: 260px;
+        padding-left: 0px;
+        padding-right: 45px;
+    }
+
+
+
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    body{
+        font-size: 12px;
+        line-height: 20px;
+        padding-bottom: 50px;
+    }
+    .section-adding {
+        padding: 50px 0;
+    } 
+    .profile-block {
+        display: flex;
+    } 
+    .profile-block .avaters {
+        width: 50%;
+        padding: 10px;
+        margin-right: 10px;
+    } 
+    .social h5 {
+        margin-top: 0 !important;
+    } 
+    .social {
+        width: 45%;
+    }
+    .profile-info {
+        width: 100%;
+        padding: 0 0px;
+    }
+    .profile-info, .statistic {
+        margin-top: 50px;
+    }
+    h2.section-title-text {
+        font-size: 22px;
+        line-height: 20px; 
+    }
+    .avaters img { 
+        margin-bottom: 10px;
+    }
+    .avaters button {
+        border: 2px solid #DDE1E8; 
+        border-radius: 10px; 
+        font-size: 12px; 
+        padding: 5px 3px; 
+    }
+    .list-item a { 
+        padding: 8px;
+        margin-bottom: 10px;
+        padding-right: 10px;
+    }
+    .list-item a img {
+        margin-right: 4px;
+        width: 25px;
+    }
+    .list-item a span svg {
+        margin-left:2px;
+        width: 15px;
+    }
+    .statistic ul li h4 { 
+        font-size: 18px; 
+    }
+    .statistic ul li h4 span {
+        font-size: 14px; 
+    }
+    .statistic ul li span.icon {
+        min-width: 45px;
+        max-width: 45px;
+        height: 45px; 
+        border-radius: 6px;
+        font-size: 14px; 
+    } 
+    .hnumbs {
+        padding: 5px;
+        padding-right: 15px;
+        margin-right: 0px;
+        border-radius: 10px;
+    }
+    .hnumbs button {
+        height: 30px;
+        width: 30px;  
+        margin-right: 10px;
+    }
+    .hnumbs span {
+        font-size: 14px; 
+    }
+    .statistic ul li { 
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 10px; 
+    }
+    .profile-info form label input { 
+        border-radius: 10px;
+        height: 45px; 
+        padding: 15px 20px;
+        font-size: 14px; 
+        margin-top: 10px;
+    }
+    .ckb label .list-item{
+        width: 100%;
+    }
+    .ckb {
+        width: 100%;
+    }
+    
+    .ckb label {
+        width: 100%;
+    }
+    .task-history-area button.theme-btn {
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+ 
+} 
