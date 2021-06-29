@@ -1,268 +1,479 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Site Title Here</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<link rel="shortcut icon" type="image/x-icon" href="#">
-        <!-- Place favicon.ico in the root directory -->
-        
-		<!-- CSS here -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
-        <link rel="stylesheet" href="assets/css/fontawesome.min.css">  
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
 
-       
-        <!-- header-area START -->
-        <div class="header-area">
-            <div class="container">
-                <div class="row  align-items-center">
-                    <div class="col-lg-3 col-6">
-                        <div class="logo-area">
-                            <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 d-none d-lg-block text-center">
-                        <div class="menu-area">
-                            <nav>
-                                <ul>
-                                    <li><a href="#"><i class="fas fa-th-large"></i> Task list</a></li>
-                                    <li><a href="#"><i class="far fa-globe-americas"></i> News</a></li> 
-                                    <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>  
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6">
-                        <div class="header-action">
-                            <div class="hnumbs">
-                                <button type="button"><i class="fal fa-plus"></i></button> <span><img src="assets/img/bxs-coin-stack.png" alt=""> 2023</span>
-                            </div>
-                            <ul class=" d-none d-md-block ">
-                                <li class="headerProfile"><a href="#" class="avt"><img src="assets/img/avater.png" alt=""><i class="far fa-angle-down"></i></a>
-                                    <ul>
-                                        <li><a href="#"><i class="fas fa-user"></i> My profile </a></li>
-                                        <li><a href="#"><i class="fas fa-th-large"></i> Task history</a></li>
-                                        <li class="mode"><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6C12.552 6 13 5.553 13 5V3C13 2.447 12.552 2 12 2C11.448 2 11 2.447 11 3V5C11 5.553 11.448 6 12 6ZM21 11H19C18.448 11 18 11.447 18 12C18 12.553 18.448 13 19 13H21C21.552 13 22 12.553 22 12C22 11.447 21.552 11 21 11ZM5 11C5.552 11 6 11.447 6 12C6 12.553 5.552 13 5 13H3C2.448 13 2 12.553 2 12C2 11.447 2.448 11 3 11H5ZM6.2207 5.0283C5.8237 4.6453 5.1907 4.6573 4.8067 5.0533C4.4227 5.4503 4.4337 6.0843 4.8307 6.4673L6.2697 7.8573C6.4647 8.0453 6.7147 8.1373 6.9647 8.1373C7.2267 8.1373 7.4877 8.0353 7.6837 7.8323C8.0677 7.4353 8.0567 6.8013 7.6597 6.4183L6.2207 5.0283ZM17.7302 7.8577C17.5352 8.0447 17.2852 8.1377 17.0352 8.1377C16.7732 8.1377 16.5122 8.0347 16.3162 7.8317C15.9322 7.4357 15.9432 6.8017 16.3402 6.4177L17.7792 5.0287C18.1782 4.6457 18.8102 4.6577 19.1932 5.0537C19.5772 5.4497 19.5662 6.0837 19.1692 6.4677L17.7302 7.8577ZM12 18C11.448 18 11 18.447 11 19V21C11 21.553 11.448 22 12 22C12.552 22 13 21.553 13 21V19C13 18.447 12.552 18 12 18ZM16.316 16.1676C16.7 15.7716 17.333 15.7596 17.73 16.1426L19.169 17.5326C19.566 17.9156 19.577 18.5496 19.193 18.9466C18.997 19.1496 18.736 19.2516 18.474 19.2516C18.224 19.2516 17.974 19.1596 17.779 18.9716L16.34 17.5816C15.943 17.1986 15.932 16.5646 16.316 16.1676ZM6.27 16.1426L4.831 17.5326C4.434 17.9156 4.423 18.5496 4.807 18.9466C5.003 19.1496 5.264 19.2516 5.526 19.2516C5.776 19.2516 6.026 19.1596 6.221 18.9716L7.66 17.5816C8.057 17.1986 8.068 16.5646 7.684 16.1676C7.301 15.7716 6.668 15.7596 6.27 16.1426ZM8 12C8 9.794 9.794 8 12 8C14.206 8 16 9.794 16 12C16 14.206 14.206 16 12 16C9.794 16 8 14.206 8 12Z" fill="#282B31"/>
-                                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6C12.552 6 13 5.553 13 5V3C13 2.447 12.552 2 12 2C11.448 2 11 2.447 11 3V5C11 5.553 11.448 6 12 6ZM21 11H19C18.448 11 18 11.447 18 12C18 12.553 18.448 13 19 13H21C21.552 13 22 12.553 22 12C22 11.447 21.552 11 21 11ZM5 11C5.552 11 6 11.447 6 12C6 12.553 5.552 13 5 13H3C2.448 13 2 12.553 2 12C2 11.447 2.448 11 3 11H5ZM6.2207 5.0283C5.8237 4.6453 5.1907 4.6573 4.8067 5.0533C4.4227 5.4503 4.4337 6.0843 4.8307 6.4673L6.2697 7.8573C6.4647 8.0453 6.7147 8.1373 6.9647 8.1373C7.2267 8.1373 7.4877 8.0353 7.6837 7.8323C8.0677 7.4353 8.0567 6.8013 7.6597 6.4183L6.2207 5.0283ZM17.7302 7.8577C17.5352 8.0447 17.2852 8.1377 17.0352 8.1377C16.7732 8.1377 16.5122 8.0347 16.3162 7.8317C15.9322 7.4357 15.9432 6.8017 16.3402 6.4177L17.7792 5.0287C18.1782 4.6457 18.8102 4.6577 19.1932 5.0537C19.5772 5.4497 19.5662 6.0837 19.1692 6.4677L17.7302 7.8577ZM12 18C11.448 18 11 18.447 11 19V21C11 21.553 11.448 22 12 22C12.552 22 13 21.553 13 21V19C13 18.447 12.552 18 12 18ZM16.316 16.1676C16.7 15.7716 17.333 15.7596 17.73 16.1426L19.169 17.5326C19.566 17.9156 19.577 18.5496 19.193 18.9466C18.997 19.1496 18.736 19.2516 18.474 19.2516C18.224 19.2516 17.974 19.1596 17.779 18.9716L16.34 17.5816C15.943 17.1986 15.932 16.5646 16.316 16.1676ZM6.27 16.1426L4.831 17.5326C4.434 17.9156 4.423 18.5496 4.807 18.9466C5.003 19.1496 5.264 19.2516 5.526 19.2516C5.776 19.2516 6.026 19.1596 6.221 18.9716L7.66 17.5816C8.057 17.1986 8.068 16.5646 7.684 16.1676C7.301 15.7716 6.668 15.7596 6.27 16.1426ZM8 12C8 9.794 9.794 8 12 8C14.206 8 16 9.794 16 12C16 14.206 14.206 16 12 16C9.794 16 8 14.206 8 12Z" fill="white"/>
-                                            </mask>
-                                            <g mask="url(#mask0)">
-                                            <rect width="24" height="24" fill="#282B31"/>
-                                            </g>
-                                            </svg> Dark mode</a></li>
-                                        <li><a href="#" class="logout"><i class="far fa-sign-out"></i> Log out</a></li> 
-                                    </ul>
-                                </li>
-                            </ul> 
-                        </div>
-                    </div>
-                    <!-- <div class="col-6 d-block d-lg-none text-center">
-                        <div class="bar">
-                            <a class="bar-icon siteBar-btn" href="#">
-                                <span></span>
-                            </a>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </div> 
-        <!-- header-area END -->
-            
-        <!-- Main START -->
-        <main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="src/img/logo.svg" />
+  <title>Web-Service | Home</title>
 
-            <!-- profile-area START -->
-            <div class="profile-area section-adding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2 class="section-title-text">Profile</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="profile-block">
-                                <div class="avaters">
-                                    <img src="assets/img/Avatar.png" alt="">
-                                    <button type="button">+ Upload new photo</button>
-                                </div>
-                                <div class="social">
-                                    <h5 class="blk-tl">Social media</h5>
-                                    <ul>
-                                        <li class="list-item"><a href="#"><div><img src="assets/img/fb.png" alt=""> Facebook</div> <span>
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="10" cy="10" r="10" fill="#1750FF"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0833 9.41658H10.5833V5.91659C10.5833 5.594 10.3219 5.33325 9.99992 5.33325C9.67792 5.33325 9.41658 5.594 9.41658 5.91659V9.41658H5.91659C5.59459 9.41658 5.33325 9.67733 5.33325 9.99992C5.33325 10.3225 5.59459 10.5833 5.91659 10.5833H9.41658V14.0833C9.41658 14.4058 9.67792 14.6666 9.99992 14.6666C10.3219 14.6666 10.5833 14.4058 10.5833 14.0833V10.5833H14.0833C14.4053 10.5833 14.6666 10.3225 14.6666 9.99992C14.6666 9.67733 14.4053 9.41658 14.0833 9.41658Z" fill="white"/>
-                                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="10" height="10">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0833 9.41658H10.5833V5.91659C10.5833 5.594 10.3219 5.33325 9.99992 5.33325C9.67792 5.33325 9.41658 5.594 9.41658 5.91659V9.41658H5.91659C5.59459 9.41658 5.33325 9.67733 5.33325 9.99992C5.33325 10.3225 5.59459 10.5833 5.91659 10.5833H9.41658V14.0833C9.41658 14.4058 9.67792 14.6666 9.99992 14.6666C10.3219 14.6666 10.5833 14.4058 10.5833 14.0833V10.5833H14.0833C14.4053 10.5833 14.6666 10.3225 14.6666 9.99992C14.6666 9.67733 14.4053 9.41658 14.0833 9.41658Z" fill="white"/>
-                                            </mask>
-                                            <g mask="url(#mask0)">
-                                            <rect x="3" y="3" width="14" height="14" fill="white"/>
-                                            </g>
-                                            </svg>
-                                            </span></a>
-                                        </li>
-                                        <li class="list-item"><a href="#"><div><img src="assets/img/tw.png" alt=""> Twitter</div> <span>
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="10" cy="10" r="10" fill="#50D86A"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75356 13.4999C8.59256 13.4999 8.43856 13.4334 8.32831 13.3162L5.49156 10.2951C5.27047 10.0606 5.28272 9.69134 5.51722 9.47084C5.75231 9.25034 6.12156 9.26201 6.34147 9.49651L8.74773 12.0579L13.6524 6.69009C13.8706 6.45151 14.2392 6.43576 14.4772 6.65276C14.7146 6.86976 14.731 7.23901 14.514 7.47642L9.18406 13.3098C9.07498 13.4299 8.91981 13.4988 8.75764 13.4999H8.75356Z" fill="white"/>
-                                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="6" width="10" height="8">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75356 13.4999C8.59256 13.4999 8.43856 13.4334 8.32831 13.3162L5.49156 10.2951C5.27047 10.0606 5.28272 9.69134 5.51722 9.47084C5.75231 9.25034 6.12156 9.26201 6.34147 9.49651L8.74773 12.0579L13.6524 6.69009C13.8706 6.45151 14.2392 6.43576 14.4772 6.65276C14.7146 6.86976 14.731 7.23901 14.514 7.47642L9.18406 13.3098C9.07498 13.4299 8.91981 13.4988 8.75764 13.4999H8.75356Z" fill="white"/>
-                                                </mask>
-                                                <g mask="url(#mask0)">
-                                                <rect x="3" y="3" width="14" height="14" fill="white"/>
-                                                </g>
-                                            </svg>
-                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 5.25C9.828 5.25 10.5 4.578 10.5 3.75C10.5 2.922 9.828 2.25 9 2.25C8.172 2.25 7.5 2.922 7.5 3.75C7.5 4.578 8.172 5.25 9 5.25ZM9 7.5C8.172 7.5 7.5 8.172 7.5 9C7.5 9.828 8.172 10.5 9 10.5C9.828 10.5 10.5 9.828 10.5 9C10.5 8.172 9.828 7.5 9 7.5ZM7.5 14.25C7.5 13.422 8.172 12.75 9 12.75C9.828 12.75 10.5 13.422 10.5 14.25C10.5 15.078 9.828 15.75 9 15.75C8.172 15.75 7.5 15.078 7.5 14.25Z" fill="#8E8E96"/>
-                                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="7" y="2" width="4" height="14">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 5.25C9.828 5.25 10.5 4.578 10.5 3.75C10.5 2.922 9.828 2.25 9 2.25C8.172 2.25 7.5 2.922 7.5 3.75C7.5 4.578 8.172 5.25 9 5.25ZM9 7.5C8.172 7.5 7.5 8.172 7.5 9C7.5 9.828 8.172 10.5 9 10.5C9.828 10.5 10.5 9.828 10.5 9C10.5 8.172 9.828 7.5 9 7.5ZM7.5 14.25C7.5 13.422 8.172 12.75 9 12.75C9.828 12.75 10.5 13.422 10.5 14.25C10.5 15.078 9.828 15.75 9 15.75C8.172 15.75 7.5 15.078 7.5 14.25Z" fill="white"/>
-                                                </mask>
-                                                <g mask="url(#mask0)">
-                                                <rect width="18" height="18" fill="#8E8E96"/>
-                                                </g>
-                                                </svg> 
-                                            </span></a>
-                                        </li>
-                                        <li class="list-item"><a href="#"><div><img src="assets/img/vic.png" alt=""> VKontakte</div> <span>
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="10" cy="10" r="10" fill="#50D86A"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75356 13.4999C8.59256 13.4999 8.43856 13.4334 8.32831 13.3162L5.49156 10.2951C5.27047 10.0606 5.28272 9.69134 5.51722 9.47084C5.75231 9.25034 6.12156 9.26201 6.34147 9.49651L8.74773 12.0579L13.6524 6.69009C13.8706 6.45151 14.2392 6.43576 14.4772 6.65276C14.7146 6.86976 14.731 7.23901 14.514 7.47642L9.18406 13.3098C9.07498 13.4299 8.91981 13.4988 8.75764 13.4999H8.75356Z" fill="white"/>
-                                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="6" width="10" height="8">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75356 13.4999C8.59256 13.4999 8.43856 13.4334 8.32831 13.3162L5.49156 10.2951C5.27047 10.0606 5.28272 9.69134 5.51722 9.47084C5.75231 9.25034 6.12156 9.26201 6.34147 9.49651L8.74773 12.0579L13.6524 6.69009C13.8706 6.45151 14.2392 6.43576 14.4772 6.65276C14.7146 6.86976 14.731 7.23901 14.514 7.47642L9.18406 13.3098C9.07498 13.4299 8.91981 13.4988 8.75764 13.4999H8.75356Z" fill="white"/>
-                                                </mask>
-                                                <g mask="url(#mask0)">
-                                                <rect x="3" y="3" width="14" height="14" fill="white"/>
-                                                </g>
-                                            </svg>
-                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 5.25C9.828 5.25 10.5 4.578 10.5 3.75C10.5 2.922 9.828 2.25 9 2.25C8.172 2.25 7.5 2.922 7.5 3.75C7.5 4.578 8.172 5.25 9 5.25ZM9 7.5C8.172 7.5 7.5 8.172 7.5 9C7.5 9.828 8.172 10.5 9 10.5C9.828 10.5 10.5 9.828 10.5 9C10.5 8.172 9.828 7.5 9 7.5ZM7.5 14.25C7.5 13.422 8.172 12.75 9 12.75C9.828 12.75 10.5 13.422 10.5 14.25C10.5 15.078 9.828 15.75 9 15.75C8.172 15.75 7.5 15.078 7.5 14.25Z" fill="#8E8E96"/>
-                                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="7" y="2" width="4" height="14">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 5.25C9.828 5.25 10.5 4.578 10.5 3.75C10.5 2.922 9.828 2.25 9 2.25C8.172 2.25 7.5 2.922 7.5 3.75C7.5 4.578 8.172 5.25 9 5.25ZM9 7.5C8.172 7.5 7.5 8.172 7.5 9C7.5 9.828 8.172 10.5 9 10.5C9.828 10.5 10.5 9.828 10.5 9C10.5 8.172 9.828 7.5 9 7.5ZM7.5 14.25C7.5 13.422 8.172 12.75 9 12.75C9.828 12.75 10.5 13.422 10.5 14.25C10.5 15.078 9.828 15.75 9 15.75C8.172 15.75 7.5 15.078 7.5 14.25Z" fill="white"/>
-                                                </mask>
-                                                <g mask="url(#mask0)">
-                                                <rect width="18" height="18" fill="#8E8E96"/>
-                                                </g>
-                                                </svg> 
-                                            </span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-6">
-                            <div class="profile-info">
-                                <form action="">
-                                    <label for="#">
-                                        Dribbble Link
-                                        <input type="text" value="https://dribbble.com/alexander-herzog">
-                                    </label>
-                                    <label for="#">
-                                        Behance Link
-                                        <input type="text" value="https://www.behance.net/dukebafor">
-                                    </label>
-                                    <label for="#">
-                                        E-Mail
-                                        <input type="text" value="alexandr.herzog@gmail.com">
-                                    </label>
-                                    <h5 class="blk-tl">Password management</h5>
-                                    <label for="#">
-                                        Primary password
-                                        <input type="password" value="********************">
-                                    </label>
-                                    <label for="#">
-                                        New password
-                                        <input type="password" value="********************">
-                                    </label>
-                                    <label for="#">
-                                        Confirm new password
-                                        <input type="password" value="********************">
-                                    </label>
-                                    <button type="submit">Save changes</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="statistic">
-                                <h5 class="blk-tl">Personal Statistic</h5>
-                                <ul>
-                                    <li >
-                                        <span class="icon" style="background: #FFCECE;color: #E24444;"><i class="fas fa-heart"></i></span>
-                                        <h4>2562 <span>Likes delivered for all time</span></h4>
-                                    </li>
-                                    <li>
-                                        <span class="icon" style="background: #F1DEFF;color: #A86CE4;"><i class="fas fa-user-plus"></i></span>
-                                        <h4>15 <span>New users invited</span></h4>
-                                    </li>
-                                    <li>
-                                        <span class="icon" style="background: #DEFFE5;color: #50D86A;"><i class="fal fa-calendar-week"></i></span>
-                                        <h4>329 <span>Days since registration</span></h4>
-                                    </li>
-                                    <li>
-                                        <span class="icon" style="background: #FFF6DE;color: #FFA10B;"><i class="fas fa-usd-circle"></i></span>
-                                        <h4>$ 1456,23 <span>Real money spent</span></h4>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- profile-area END -->
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="src/css/style.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d312f45e87.js" crossorigin="anonymous"></script>
+</head>
 
-        </main>
-        <!-- Main END -->
+<body class="dark">
 
-        <!-- Footer-area START -->
-        <footer class="d-none d-md-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="footer-wrp">
-                            <div class="footer-widget">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><span>
-                                    <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M27.3576 1.08337C27.5523 0.458948 27.3576 0 26.4312 0H23.368C22.589 0 22.2302 0.396421 22.0355 0.833684C22.0355 0.833684 20.4776 4.48695 18.2708 6.86C17.5568 7.54695 17.2323 7.76526 16.8429 7.76526C16.6481 7.76526 16.3663 7.54695 16.3663 6.92253V1.08337C16.3663 0.333896 16.1403 0 15.4911 0H10.6775C10.1909 0 9.89812 0.34779 9.89812 0.677474C9.89812 1.388 11.0013 1.55179 11.1151 3.55011V7.89053C11.1151 8.84211 10.9366 9.01474 10.5471 9.01474C9.50866 9.01474 6.98282 5.34484 5.48447 1.14589C5.19084 0.329684 4.89633 0 4.11346 0H1.05025C0.175041 0 0 0.396421 0 0.833684C0 1.61432 1.03865 5.48632 4.8355 10.6072C7.36703 14.104 10.9331 16 14.1783 16C16.1256 16 16.3663 15.5789 16.3663 14.8537V12.2105C16.3663 11.3684 16.5508 11.2004 17.1671 11.2004C17.6218 11.2004 18.4005 11.4189 20.2181 13.1051C22.295 15.1032 22.6372 16 23.8056 16H26.8688C27.744 16 28.1816 15.5789 27.9291 14.748C27.653 13.9198 26.6613 12.7185 25.3455 11.2941C24.6315 10.4821 23.5605 9.60779 23.2362 9.17074C22.7818 8.60863 22.9115 8.35895 23.2362 7.85958C23.2362 7.85958 26.9681 2.80105 27.3576 1.08358V1.08337Z" fill="#282B31"/>
-                                    </svg>
-                                    </span></a>
-                                <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                            </div>
-                            <div class="footer-widget">
-                                <p>© 2020 - All Rights Lecensed</p>
-                            </div>
-                            <div class="footer-widget">
-                                <p>For commercial inquiries</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Footer-area EMD -->
+  <!-- Header Start -->
+  <header>
+    <div class="header">
 
-        <!-- Footer-bar START -->
-        <div class="footer-bar d-block d-md-none"> 
-            <ul>
-                <li><a href="#"><i class="fas fa-th-large"></i> Task list</a></li>
-                <li><a href="#"><i class="far fa-globe-americas"></i> News</a></li> 
-                <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>  
-                <li><a href="#"><i class="far fa-bars"></i> Menu</a></li>  
-            </ul>
+      <a href="index.html" class="header--logo">
+        <img src="src/img/logo.svg" alt="logo" class="logo-photo">
+        <h3 class="logo">Pro-Promotion.com</h3>
+      </a>
+
+      <div class="header--menu">
+        <ul>
+          <li><a href="index.html">
+              <i class="fas fa-th-large"></i>
+              <span class="text-nav">Home</span>
+            </a></li>
+          <li><a href="#">
+              <i class="fas fa-globe-europe"></i>
+              <span class="text-nav">Category</span>
+            </a></li>
+          <li><a href="#">
+              <i class="fas fa-question-circle"></i>
+              <span class="text-nav">FAQ</span>
+            </a></li>
+        </ul>
+      </div>
+
+      <div class="header--user-action">
+
+        <div class="user-point">
+          <a href="#" class="icon">
+            <i class="fas fa-plus"></i>
+          </a>
+          <div class="point">
+            <i class="fas fa-database"></i>
+            <span class="p">2023</span>
+          </div>
+
         </div>
-        <!-- Footer-bar END -->
+
+        <div class="user-dropdown">
+          <button>
+            <img src="src/img/users/user-01.png" alt="">
+            <i class="fas fa-caret-down"></i>
+          </button>
+          <nav>
+            <ul>
+              <li><a href="profile.html">
+                  <i class="fas fa-user-alt"></i>
+                  <span>My profile</span>
+                </a></li>
+              <li><a href="#">
+                  <i class="fas fa-th-large"></i>
+                  <span>Task history</span>
+                </a></li>
+              <li><a href="#" class="logout">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span>Log Out</span>
+                </a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Product Start -->
+  <div class="container">
+    <div class="product-add">
+      <h6 class="product-title">Product List</h6>
+      <a href="#" class="btn-product"><i class="fas fa-plus" aria-hidden="true"></i> Add Product</a>
+    </div>
+
+    <div class="products">
+
+      <div class="product-card">
+        <div class="card-header">
+
+          <div class="user-info">
+            <div class="user-photo">
+              <div class="u-photo">
+                <img src="src/img/users/user-02.png" alt="user-photo">
+              </div>
+              <div class="action">
+                <img src="src/img/users/actions/like.svg" alt="user-action">
+              </div>
+            </div>
+            <div class="u-info">
+              <h6 class="username">Tran Mau Tri Tam</h6>
+              <span class="action">Like</span>
+            </div>
+          </div>
+
+          <i class="fas fa-ellipsis-v"></i>
+
+        </div>
+        <div class="card-content">
+          <img src="src/img/task-photo/01.png" alt="Product-Photo">
+        </div>
+        <a href="#" class="btn-view">Perform a product</a>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header">
+
+          <div class="user-info">
+            <div class="user-photo">
+              <div class="u-photo">
+                <img src="src/img/users/user-03.png" alt="user-photo">
+              </div>
+              <div class="action">
+                <img src="src/img/users/actions/comments.svg" alt="user-action">
+              </div>
+            </div>
+            <div class="u-info">
+              <h6 class="username">Martin David</h6>
+              <span class="action">Comment</span>
+            </div>
+          </div>
+
+          <i class="fas fa-ellipsis-v"></i>
+
+        </div>
+        <div class="card-content">
+          <img src="src/img/task-photo/02.png" alt="Product-Photo">
+        </div>
+        <a href="#" class="btn-view">Perform a product</a>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header">
+
+          <div class="user-info">
+            <div class="user-photo">
+              <div class="u-photo">
+                <img src="src/img/users/user-04.png" alt="user-photo">
+              </div>
+              <div class="action">
+                <img src="src/img/users/actions/followers.svg" alt="user-action">
+              </div>
+            </div>
+            <div class="u-info">
+              <h6 class="username">Dwinawan</h6>
+              <span class="action">Followers</span>
+            </div>
+          </div>
+
+          <i class="fas fa-ellipsis-v"></i>
+
+        </div>
+        <div class="card-content">
+          <img src="src/img/task-photo/03.png" alt="Product-Photo">
+        </div>
+        <a href="#" class="btn-view">Perform a product</a>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header">
+
+          <div class="user-info">
+            <div class="user-photo">
+              <div class="u-photo">
+                <img src="src/img/users/user-05.png" alt="user-photo">
+              </div>
+              <div class="action">
+                <img src="src/img/users/actions/views.svg" alt="user-action">
+              </div>
+            </div>
+            <div class="u-info">
+              <h6 class="username">Anton Tkachev</h6>
+              <span class="action">Views</span>
+            </div>
+          </div>
+
+          <i class="fas fa-ellipsis-v"></i>
+
+        </div>
+        <div class="card-content">
+          <img src="src/img/task-photo/04.png" alt="Product-Photo">
+        </div>
+        <a href="#" class="btn-view">Perform a product</a>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header">
+
+          <div class="user-info">
+            <div class="user-photo">
+              <div class="u-photo">
+                <img src="src/img/users/user-06.png" alt="user-photo">
+              </div>
+              <div class="action">
+                <img src="src/img/users/actions/like.svg" alt="user-action">
+              </div>
+            </div>
+            <div class="u-info">
+              <h6 class="username">Tran Mau Tri Tam</h6>
+              <span class="action">Like</span>
+            </div>
+          </div>
+
+          <i class="fas fa-ellipsis-v"></i>
+
+        </div>
+        <div class="card-content">
+          <img src="src/img/task-photo/05.png" alt="Product-Photo">
+        </div>
+        <a href="#" class="btn-view">Perform a product</a>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header">
+
+          <div class="user-info">
+            <div class="user-photo">
+              <div class="u-photo">
+                <img src="src/img/users/user-07.png" alt="user-photo">
+              </div>
+              <div class="action">
+                <img src="src/img/users/actions/like.svg" alt="user-action">
+              </div>
+            </div>
+            <div class="u-info">
+              <h6 class="username">Tran Mau Tri Tam</h6>
+              <span class="action">Like</span>
+            </div>
+          </div>
+
+          <i class="fas fa-ellipsis-v"></i>
+
+        </div>
+        <div class="card-content">
+          <img src="src/img/task-photo/06.png" alt="Product-Photo">
+        </div>
+        <a href="#" class="btn-view">Perform a product</a>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header">
+
+          <div class="user-info">
+            <div class="user-photo">
+              <div class="u-photo">
+                <img src="src/img/users/user-08.png" alt="user-photo">
+              </div>
+              <div class="action">
+                <img src="src/img/users/actions/like.svg" alt="user-action">
+              </div>
+            </div>
+            <div class="u-info">
+              <h6 class="username">Tran Mau Tri Tam</h6>
+              <span class="action">Like</span>
+            </div>
+          </div>
+
+          <i class="fas fa-ellipsis-v"></i>
+
+        </div>
+        <div class="card-content">
+          <img src="src/img/task-photo/07.png" alt="Product-Photo">
+        </div>
+        <a href="#" class="btn-view">Perform a product</a>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header">
+
+          <div class="user-info">
+            <div class="user-photo">
+              <div class="u-photo">
+                <img src="src/img/users/user-09.png" alt="user-photo">
+              </div>
+              <div class="action">
+                <img src="src/img/users/actions/like.svg" alt="user-action">
+              </div>
+            </div>
+            <div class="u-info">
+              <h6 class="username">Tran Mau Tri Tam</h6>
+              <span class="action">Like</span>
+            </div>
+          </div>
+
+          <i class="fas fa-ellipsis-v"></i>
+
+        </div>
+        <div class="card-content">
+          <img src="src/img/task-photo/08.png" alt="Product-Photo">
+        </div>
+        <a href="#" class="btn-view">Perform a product</a>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header">
+
+          <div class="user-info">
+            <div class="user-photo">
+              <div class="u-photo">
+                <img src="src/img/users/user-10.png" alt="user-photo">
+              </div>
+              <div class="action">
+                <img src="src/img/users/actions/like.svg" alt="user-action">
+              </div>
+            </div>
+            <div class="u-info">
+              <h6 class="username">Tran Mau Tri Tam</h6>
+              <span class="action">Like</span>
+            </div>
+          </div>
+
+          <i class="fas fa-ellipsis-v"></i>
+
+        </div>
+        <div class="card-content">
+          <img src="src/img/task-photo/09.png" alt="Product-Photo">
+        </div>
+        <a href="#" class="btn-view">Perform a product</a>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header">
+
+          <div class="user-info">
+            <div class="user-photo">
+              <div class="u-photo">
+                <img src="src/img/users/user-11.png" alt="user-photo">
+              </div>
+              <div class="action">
+                <img src="src/img/users/actions/like.svg" alt="user-action">
+              </div>
+            </div>
+            <div class="u-info">
+              <h6 class="username">Tran Mau Tri Tam</h6>
+              <span class="action">Like</span>
+            </div>
+          </div>
+
+          <i class="fas fa-ellipsis-v"></i>
+
+        </div>
+        <div class="card-content">
+          <img src="src/img/task-photo/10.png" alt="Product-Photo">
+        </div>
+        <a href="#" class="btn-view">Perform a product</a>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header">
+
+          <div class="user-info">
+            <div class="user-photo">
+              <div class="u-photo">
+                <img src="src/img/users/user-02.png" alt="user-photo">
+              </div>
+              <div class="action">
+                <img src="src/img/users/actions/like.svg" alt="user-action">
+              </div>
+            </div>
+            <div class="u-info">
+              <h6 class="username">Tran Mau Tri Tam</h6>
+              <span class="action">Like</span>
+            </div>
+          </div>
+
+          <i class="fas fa-ellipsis-v"></i>
+
+        </div>
+        <div class="card-content">
+          <img src="src/img/task-photo/02.png" alt="Product-Photo">
+        </div>
+        <a href="#" class="btn-view">Perform a product</a>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header">
+
+          <div class="user-info">
+            <div class="user-photo">
+              <div class="u-photo">
+                <img src="src/img/users/user-07.png" alt="user-photo">
+              </div>
+              <div class="action">
+                <img src="src/img/users/actions/like.svg" alt="user-action">
+              </div>
+            </div>
+            <div class="u-info">
+              <h6 class="username">Tran Mau Tri Tam</h6>
+              <span class="action">Like</span>
+            </div>
+          </div>
+
+          <i class="fas fa-ellipsis-v"></i>
+
+        </div>
+        <div class="card-content">
+          <img src="src/img/task-photo/04.png" alt="Product-Photo">
+        </div>
+        <a href="#" class="btn-view">Perform a product</a>
+      </div>
 
 
-		<!-- JS here --> 
-        <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>  
-    </body>
+
+    </div>
+  </div>
+  <!-- Product End -->
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="footer">
+
+      <div class="footer--social">
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-vk"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-telegram-plane"></i>
+        </a>
+      </div>
+      <div class="footer--copyright">
+        <p>© 2020 - All Rights Lecensed</p>
+      </div>
+      <div class="footer--police">
+        <p>For commercial inquiries</p>
+      </div>
+
+      <div class="footer--menu">
+        <ul>
+          <li><a href="index.html">
+              <i class="fas fa-th-large"></i>
+              <span class="text-nav">Home</span>
+            </a></li>
+          <li><a href="#">
+              <i class="fas fa-globe-europe"></i>
+              <span class="text-nav">Category</span>
+            </a></li>
+          <li><a href="#">
+              <i class="fas fa-question-circle"></i>
+              <span class="text-nav">FAQ</span>
+            </a></li>
+          <li><a href="menu.html">
+              <i class="fas fa-bars"></i>
+              <span class="text-nav">Menu</span>
+            </a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  </footer>
+  <!-- Footer End -->
+
+  <!-- JS Files -->
+  <script src="/src/js/main.js"></script>
+</body>
+
 </html>

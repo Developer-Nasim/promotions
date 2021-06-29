@@ -390,6 +390,7 @@ form button:hover {
 }
 
 .statistic ul li {
+  position: relative;
   background: #fff;
   padding: 20px;
   margin-bottom: 20px;
@@ -409,7 +410,17 @@ form button:hover {
   font-size: 16px;
   margin-right: 20px;
 }
+.statistic ul li b {
+  position: absolute;
+  right: 20px;
+  text-align: center;
+  color: #282b31;
+}
 
+.statistic ul li b span {
+  display: block;
+  color: #50d86a;
+}
 .statistic ul li h4 {
   margin: 0;
   font-size: 24px; 
@@ -619,7 +630,7 @@ table tbody tr {
 
 table tbody tr td {
   background: #fff;
-  padding: 10px 0px;
+  padding: 20px 0px;
   font-size: 16px;
   line-height: 20px;  
   color: #282B31; 
@@ -744,9 +755,33 @@ table tbody tr td:nth-child(4){
 .rstc-blk {
   margin-bottom: 10px;
 }
+.filtarings {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
+.section-titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
 
+.single-select-blk {
+  margin-left: 10px;
+}
 
+.section-titles h2.section-title-text {
+  margin: 0;
+}
+thead tr {
+  vertical-align: baseline;
+}
+thead tr th span {
+  display: block;
+  color: black;
+}
 
 
 

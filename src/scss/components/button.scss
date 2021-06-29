@@ -1,0 +1,45 @@
+.btn-product {
+    padding: 15px 18px;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: $grey;
+    color: $dark;
+    border-radius: 15px;
+
+    i {
+        margin-right: 10px;
+    }
+}
+
+.btn-view {
+    @include centerFlex;
+    flex-basis: 100%;
+    padding: 10px 0;
+    color: $dark;
+    border: 2px solid $primary !important;
+    border-radius: 15px;
+    transition: 300ms all;
+
+    &:hover {
+        background-color: $primary;
+        color: $light;
+        border: 0;
+    }
+}
+
+.user-setting-btn {
+    @include centerFlex;
+    border: 2px solid $primary !important;
+    border-radius: 15px;
+    padding: 15px 18px;
+    background-color: transparent;
+    transition: 250ms all;
+    color: $dark;
+    font-size: 1rem;
+    font-weight: 400;
+
+    &:hover {
+        background-color: $primary;
+        color: $light;
+    }
+}
