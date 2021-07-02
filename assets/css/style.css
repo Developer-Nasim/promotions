@@ -976,8 +976,9 @@ thead tr th span {
   border-radius: 5px;
   box-shadow: 1px 5px 8px 0px #00000040;
   transition: .3s;
+  min-width: 50px;
   opacity: 0;
-  visibility: visible;
+  visibility: hidden;
   z-index: 1;
 }
 
