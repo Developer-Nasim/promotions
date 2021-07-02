@@ -6,7 +6,7 @@
         <title>Task Creation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<link rel="shortcut icon" type="image/x-icon" href="#">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.svg">
         <!-- Place favicon.ico in the root directory -->
         
 		<!-- CSS here -->
@@ -74,7 +74,7 @@
             </div>
         </div> 
         <!-- header-area END -->
-            
+             
         <!-- Main START -->
         <main>
 
@@ -88,57 +88,114 @@
                     </div>
                     <form action="">
                         <div class="row">
-                            <div class="col-lg-12">
-                                <div class="items-blk">
-                                    <h5 class="blk-tl">Select a social network</h5> 
-                                    <div class="ckb">
-                                        <input type="checkbox" id="dribbble" checked>
-                                        <label for="dribbble">
-                                            <div class="list-item"><img src="assets/img/dribbble.png" alt=""> Dribbble </div>
-                                        </label>
-                                    </div>  
-                                    <div class="ckb">
-                                        <input type="checkbox" id="behance">
-                                        <label for="behance">
-                                            <div class="list-item"><img src="assets/img/behance.png" alt=""> Behance</div>
-                                        </label>
-                                    </div>  
+                            <div class="col-lg-3">
+                                <div class="items-blk pLinks"> 
+                                    <p>Product Name </p>
+                                    <input type="text" value="Product Name ">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="items-blk pLinks"> 
+                                    <p>Product Model </p>
+                                    <input type="text" value="Product Model ">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="items-blk pLinks"> 
+                                    <p>Product Since</p>
+                                    <input type="text" value="Product Since ">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="items-blk pLinks"> 
+                                    <p>Product Price</p>
+                                    <input type="text" value="Product Price">
                                 </div>
                             </div> 
+
                             <div class="col-lg-12">
-                                <div class="items-blk">
-                                    <h5 class="blk-tl">Task type</h5> 
-                                    <div class="ckb">
-                                        <input type="checkbox" id="likes"  checked>
-                                        <label for="likes">
-                                            <div class="list-item"><img src="assets/img/like.png" alt=""> Likes </div>
-                                        </label>
-                                    </div>  
-                                    <div class="ckb">
-                                        <input type="checkbox" id="followers">
-                                        <label for="followers">
-                                            <div class="list-item"><img src="assets/img/followers.png" alt=""> Followers</div>
-                                        </label>
-                                    </div>  
-                                    <div class="ckb">
-                                        <input type="checkbox" id="comment">
-                                        <label for="comment">
-                                            <div class="list-item"><img src="assets/img/comments.png" alt=""> Comments</div>
-                                        </label>
-                                    </div>  
-                                    <div class="ckb">
-                                        <input type="checkbox" id="views">
-                                        <label for="views">
-                                            <div class="list-item"><img src="assets/img/views.png" alt=""> Views</div>
-                                        </label>
-                                    </div>  
+                                <div class="all-image-inert-boxes"> 
+                                    <div class="items-blk imgInsert">  
+                                        <input type="file" id="f1">
+                                        <img src="assets/img/1.png" alt="">
+                                    </div>
+                                    <div class="items-blk imgInsert">  
+                                        <input type="file" id="f1">
+                                        <img src="assets/img/2.png" alt="">
+                                    </div>
+                                    <div class="items-blk imgInsert">  
+                                        <input type="file" id="f1">
+                                        <img src="assets/img/3.png" alt="">
+                                    </div>
+                                    <div class="items-blk imgInsert">  
+                                        <input type="file" id="f1">
+                                        <img src="assets/img/4.png" alt="">
+                                    </div>
+                                    <div class="items-blk imgInsert">  
+                                        <input type="file" id="f1">
+                                        <img src="assets/img/5.png" alt="">
+                                    </div>
                                 </div>
                             </div> 
+ 
                             <div class="col-lg-12">
                                 <div class="items-blk pLinks">
-                                    <h5 class="blk-tl">Project link</h5>
-                                    <p>For example: https://dribbble.com/shots/Example-Name</p>
-                                    <input type="text" value="https://dribbble.com/shots/13967318-Dribbble-Prmotion-Service-UI-Components">
+                                    <h5 class="blk-tl">Product description</h5> 
+                                        <label for=""> 
+                                            <i class="far fa-text-size"></i>
+                                            <textarea id="desc" placeholder="product description"></textarea> 
+                                        </label>
+                                    <br> 
+                                    <!-- <p>Project Description</p>
+                                    <textarea id="basic-example">
+                                        <h2 style="text-align: center;">Welcome to the TinyMCE editor demo!</h2>
+                                      
+                                        <h2>Got questions or need help?</h2> 
+                                        <ul>
+                                          <li>Our <a href=" ">documentation</a> is a great resource for learning how to configure TinyMCE.</li>
+                                          <li>Have a specific question? Try the <a href=" "  rel="noopener"><code>tinymce</code> tag at Stack Overflow</a>.</li>
+                                          <li>We also offer enterprise grade support as part of <a href=" ">TinyMCE premium plans</a>.</li>
+                                        </ul>
+                                      
+                                        <h2>A simple table to play with</h2>
+                                      
+                                        <table style="border-collapse: collapse; width: 100%;" border="1">
+                                          <thead>
+                                            <tr>
+                                              <th>Product</th>
+                                              <th>Cost</th>
+                                              <th>Really?</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>TinyMCE</td>
+                                              <td>Free</td>
+                                              <td>YES!</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Plupload</td>
+                                              <td>Free</td>
+                                              <td>YES!</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      
+                                        <h2>Found a bug?</h2>
+                                      
+                                        <p>
+                                          If you think you have found a bug please create an issue on the <a href=" ">GitHub repo</a> to report it to the developers.
+                                        </p>
+                                      
+                                        <h2>Finally ...</h2>
+                                      
+                                        <p>
+                                          Don't forget to check out our other product <a href=" " target="_blank">Plupload</a>, your ultimate upload solution featuring HTML5 upload support.
+                                        </p>
+                                        <p>
+                                          Thanks for supporting TinyMCE! We hope it helps you and your users create great content.<br>All the best from the TinyMCE team.
+                                        </p>
+                                    </textarea> -->
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -186,7 +243,7 @@
                                 </div>
                             </div> 
                             <div class="col-lg-12">
-                                <button type="submit">Create task</button>
+                                <button type="submit">Send Product</button>
                             </div>
                         </div> 
                     </form>
@@ -241,5 +298,26 @@
         <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>  
+        <script src="https://cdn.tiny.cloud/1/qagffr3pkuv17a8on1afax661irst1hbr4e6tbv888sz91jc/tinymce/5-stable/tinymce.min.js"></script>  
+        <script>
+            
+            tinymce.init({
+            selector: 'textarea#basic-example',
+            height: 300,
+            menubar: false,
+            plugins: [
+                'advlist autolink lists link image charmap print preview anchor',
+                'searchreplace visualblocks code fullscreen',
+                'insertdatetime media table paste code help wordcount'
+            ],
+            toolbar: 'undo redo | formatselect | ' +
+            'bold italic backcolor | alignleft aligncenter ' +
+            'alignright alignjustify | bullist numlist outdent indent | ' +
+            'removeformat | help',
+            content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+            });
+
+
+        </script>
     </body>
 </html>
