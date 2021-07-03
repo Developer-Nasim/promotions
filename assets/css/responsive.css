@@ -10,7 +10,12 @@
     .profile-info { 
         padding: 0 20px;
     }
- 
+    .menu-area nav ul li a{
+        margin: 0 10px;
+    }
+    .mega-menu ul { 
+        width: 150px; 
+    }
 
 
 

@@ -109,171 +109,10 @@ img{
 /* default-css END 
 ================================== */
  
+ 
 
-
-.header-area {
-  padding: 25px 0; 
-  width: 100%;
-  z-index: 99; 
-  background: var(--whitColor);
-  border-bottom: 2px solid #E0E0EC;
-}
-.menu-area nav ul li {
-  list-style: none;
-  display: inline-block;
-}
-
-.menu-area nav ul li a {
-  font-size: 18px;
-  color: var(--grayColor); 
-  display: inline-block;
-  margin: 0 20px;
-  position: relative;
-  transition: .3s;
-}
-.menu-area nav ul li a:hover{
-  color: var(--blackColor);
-}
-.menu-area nav ul li a i {
-  margin-right: 10px;
-}
-.menu-area nav ul li a.theme-btn {
-  background: var(--whitColor);
-  display: inline-block;
-  padding: 0 50px;
-  height: 48px; 
-  line-height: 48px;
-  border-radius: 30px;
-  border: 2px solid var(--whitColor);
-  transition: .3s;
-}  
-.menu-area nav ul li a i {
-  margin-right: 10px;
-}
-
-.header-action {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.hnumbs {
-  background: #DDE1E8;
-  padding: 5px;
-  border-radius: 15px;
-  padding-right: 30px;
-  margin-right: 10px;
-}
-
-.hnumbs button {
-  height: 30px;
-  width: 30px;
-  background: #1750FF;
-  border-radius: 10px;
-  color: #fff;
-  border: none;
-  outline: none;
-  margin-right: 15px;
-}
-.hnumbs span {
-  font-size: 16px;
-  color: #282B31;
-}
-
-.hnumbs span img {
-  margin-right: 4px;
-}
-
-.header-action ul li.headerProfile {
-  position: relative;
-}
-
-.header-action ul li.headerProfile a {
-  display: block;
-  width: max-content;
-  position: relative;
-}
-
-.header-action ul li.headerProfile a img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.header-action ul li ul {
-  position: absolute;
-  top: 65px;
-  right: 0;
-  background: #FFFFFF;
-  border: 2px solid #DDE1E8;
-  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)), drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)), drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)), drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)), drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)), drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
-  box-sizing: border-box;
-  border-radius: 15px;
-  padding: 15px;
-  opacity: 0;
-  visibility: hidden;
-  transition: .3s;
-  z-index: 2;
-} 
-.header-action ul li:hover ul{
-  opacity:1;
-  visibility: visible;
-}
-.header-action ul li ul li {
-  display: block;
-  font-size: 16px;
-  padding: 10px 0px;
-  min-width: 200px;
-  color: #282B31;
-}
-.header-action ul li.headerProfile ul a {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.header-action ul li ul a i {
-  margin-right: 10px;
-}
-.header-action ul li ul a svg {
-  margin-right: 5px;
-} 
-.header-action ul li ul li.mode {
-  position: relative;
-  border-top: 1px solid #DDE1E8;
-  border-bottom: 1px solid #DDE1E8;
-  padding: 14px 0;
-  margin-bottom: 8px;
-  margin-top: 5px;
-}
-.header-action ul li a.avt {
-  padding-right: 20px;
-}
-
-.header-action ul li a.avt i {
-  position: absolute;
-  top: 60%;
-  right: 0;
-  transform: translateY(-50%);
-  font-size: 20px;
-  color: #282B31;
-  transition: .3s;
-}
-
-.header-action ul li:hover a.avt i {
-  transform: translateY(-65%) rotate(180deg); 
-}
-.header-action ul li a.logout{
-  color:  #E24444;
-}
-
-
-
-
-/* Header-area END and Profile-area STARTED */ 
-
-
-
+/* Profile-area STARTED */ 
+  
 .section-adding {
   padding: 70px 0;
 }
@@ -840,7 +679,7 @@ thead tr th span {
 }
 .hero-item {
   position: relative;
-  height: 600px;
+  height: 720px;
   display: flex;
   align-items: center;
 }
@@ -854,7 +693,7 @@ thead tr th span {
   object-fit: cover;
 }
 .hr-contents {
-  width: 600px;
+  width: 55%;
   margin-left: auto;
   margin-top: 200px;
 }
@@ -946,11 +785,10 @@ thead tr th span {
   justify-content: space-between;
   margin: 30px 0;
 }
-
 .inf-btns button {
   background: white;
   border: 2px solid #4447e2;
-  width: 15%;
+  width: max-content;
   display: flex;
   align-items: center;
   position: relative;
@@ -958,8 +796,8 @@ thead tr th span {
   color: #4447E2;
   font-size: 20px;
   border-radius: 5px;
+  padding-right: 15px;
 }
-
 .inf-btns button span {
   display: block;
   padding: 10px 20px;
@@ -1027,10 +865,9 @@ thead tr th span {
   position: relative;
   align-items: center;
   border: 2px solid #4447E2;
-  padding: 50px 30px;
+  padding: 25px 30px; 
   border-radius: 30px;
-  justify-content: space-between;
-  margin-top: 50px;
+  justify-content: space-between; 
 }
 .binfo img.infoTitleImg {
   position: absolute;
@@ -1058,8 +895,7 @@ thead tr th span {
 
 .binfo .b-nms h4 {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center; 
   font-size: 42px;
   font-weight: 400;
 }
@@ -1086,18 +922,15 @@ thead tr th span {
 
 .binfo .b-nms h4 small {
   font-size: 24px;
+  margin-left: 20px;
 }
-
-.binfo .act-infos p {}
-
 .binfo .act-infos p {
   position: absolute;
-  top: 50%;
-  left: 0;
-  transform: rotate(90deg) translate(-15%,300%);
+  top: 41%;
+  left: -60%;
+  transform: rotate(-90deg) translate(-15%,300%);
   margin: 0;
 }
-
 .binfo .act-infos ul {
   display: flex;
   flex-wrap: wrap;
@@ -1108,7 +941,7 @@ thead tr th span {
 .binfo .act-infos ul li {
   font-size: 18px;
   text-align: center;
-  margin: 34px 0;
+  margin: 20px 0;
   color: #272B32;
 }
 
@@ -1269,14 +1102,25 @@ thead tr th span {
 .product-detailse-area {
   padding-bottom: 50px;
 }
-.binfo .act-infos span.rightico {
+.binfo .act-infos a.rightico {
   position: absolute;
   top: 50%;
   right: 0;
   font-size: 40px;
   transform: translateY(-50%);
 }
+.cm-arrows a {
+  padding: 7px 25px;
+  border: 1px solid #4447e2;
+  border-radius: 4px;
+  margin-left: 10px;
+  transition: .3s;
+}
 
+.cm-arrows a:hover {
+  background: #4447e2;
+  color: #fff;
+}
  
 
 
@@ -1298,7 +1142,7 @@ thead tr th span {
 }
 
 .prof-wrps {
-  height: 600px;
+  height: 720px;
   position: relative;
   width: 100%;
   border-radius: 15px;
